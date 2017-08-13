@@ -1,0 +1,9 @@
+export const SET_USER = 'SET_USER'
+export const SET_FEED = 'SET_FEED'
+export const SET_FRIENDSHIPS = 'SET_FRIENDSHIPS'
+
+export const ADD_COMMENT = 'ADD_COMMENT'
+export const ADD_REACTION = 'ADD_REACTION'
+
+export const SET_CURRENT_LOCATION = 'SET_CURRENT_LOCATION'
+export const SET_NEARBY = 'SET_NEARBY'

@@ -1,0 +1,15 @@
+@import "~bulma/sass/utilities/_all";
+
+
+$primary: #9b59b6;
+
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.25),
+  5: ($spacer * 3)
+);

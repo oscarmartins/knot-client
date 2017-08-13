@@ -1,0 +1,49 @@
+{
+  "name": "knot-client",
+  "version": "1.0.0",
+  "description": "Sample client application for Knot",
+  "author": "Collin Henderson <collin@syropia.net>",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "buefy": "^0.5.0",
+    "bulma": "^0.5.1",
+    "cross-env": "^5.0.1",
+    "dotenv": "^4.0.0",
+    "es6-promise": "^4.1.1",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "js-cookie": "^2.1.4",
+    "lazysizes": "^4.0.0-rc3",
+    "local-storage": "^1.4.2",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "node-sass": "^4.5.3",
+    "nuxt": "^1.0.0-rc3",
+    "object-to-formdata": "^1.0.12",
+    "popper.js": "^1.11.1",
+    "sass-loader": "^6.0.6",
+    "source-map-support": "^0.4.15",
+    "vue-picture-input": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "backpack-core": "^0.4.1",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
