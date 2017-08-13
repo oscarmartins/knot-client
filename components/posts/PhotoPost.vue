@@ -3,7 +3,7 @@
     <post-header :post="post"></post-header>
     <div class="dashboard-activity-feed-post-image-wrap" :style="{ paddingBottom: aspectRatio}">
       <div class="dashboard-activity-feed-post-image">
-        <img :data-src="post.postable.imageUrl" :alt="post.postable.body" class="lazyload">
+        <img :data-src="post.postable.image_url" :alt="post.postable.body" class="lazyload">
       </div>
     </div>
     <div class="dashboard-activity-feed-post-body" v-if="post.postable.body">
