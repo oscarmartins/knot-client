@@ -10,7 +10,7 @@
         <span>{{ place.name }}</span>
         <span class="location-meta">
           <span v-if="place.categories[0]">{{ place.categories[0].name }}</span>
-          <span v-if="place.location.address">at {{ place.location.address }}</span>
+          <span v-if="place.location.address">&nbsp;at {{ place.location.address }}</span>
         </span>
       </li>
     </ul>
