@@ -24,7 +24,7 @@
           </div>
           <div class="field">
             <div class="control">
-              <textarea  class="textarea" name="" id="" rows="10" v-model="post.body" placeholder="Caption your photo"></textarea>
+              <textarea class="textarea" rows="3" v-model="post.body" placeholder="Caption your photo"></textarea>
             </div>
           </div>
           <div class="field">
@@ -67,13 +67,14 @@ export default {
       addingLocation: false,
       post: {
         body: '',
-        image: null
+        image: null,
+        location: {}
       }
     }
   },
   computed: {
     locationButtonLabel () {
-      return this.post.hasOwnProperty('location') ? this.post.location.name : 'I\'m at...'
+      return Object.keys(this.post.location).length ? this.post.location.name : 'I\'m at...'
     }
   },
   methods: {
