@@ -27,8 +27,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.dashboard { height: 100%; }
+.dashboard { height: 100vh; }
 .dashboard-page {
+  -webkit-overflow-scrolling: touch;
   display: flex;
   flex-direction: column;
   height: 100vh;
