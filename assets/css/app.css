@@ -1,0 +1,28 @@
+@tailwind preflight;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @apply .font-sans;
+}
+
+input,
+button {
+  outline: none;
+}
+
+[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#__nuxt {
+  height: 100%;
+}
+
+@tailwind utilities;
