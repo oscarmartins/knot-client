@@ -35,6 +35,7 @@ const actions = {
   login ({ commit }, credentials) {
     return new Promise((resolve, reject) => {
       client.post('/api/auth', credentials).then((res) => {
+        console.log(res)
         setToken(res.access_token)
         resolve(res)
       }).catch((error) => {

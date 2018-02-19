@@ -4,14 +4,17 @@ import axios from 'axios'
 const router = Router()
 
 router.post('/auth', function (req, res, next) {
-  axios.post('http://knot.app/oauth/token', {
+  const defpar = {
     grant_type: 'password',
     client_id: process.env.KNOT_CLIENT_ID,
     client_secret: process.env.KNOT_CLIENT_SECRET,
     username: req.body.email,
     password: req.body.password,
     scope: '*'
-  }).then((response) => {
+  }
+  console.log(defpar)
+  axios.post('http://localhost:8081/services', {REQ_CONTEX: 2000, REQ_ACTION: 2010, REQ_INPUTS: {email: req.body.email, password: req.body.password}}).then((response) => {
+    console.log(response.data)
     res.send(response.data)
   }).catch((e) => {
     res.status(500).send({ error: 'Invalid credentials' })
